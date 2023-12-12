@@ -1,0 +1,132 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("/images/bg-intro-desktop.png") rgb(248, 133, 153);
+    margin: 0 130px;
+}
+
+section{
+    max-width: 100%;
+    width: 50%;
+    
+}
+
+.learn{
+    padding: 40px;
+    width: 90%;
+    color: #fff;
+}
+
+.learn h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.learn p{
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.head{
+    color: #fff;
+    background-color: hsl(261, 53%, 47%);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.head span{
+    font-weight: bold;
+}
+
+form{
+    background: white;
+    height: 380px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+input,
+.btn{
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 80%;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.btn{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn:hover{
+    background-color:hsl(154, 85%, 50%);
+}
+
+form p{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+form p span{
+    color: rgb(228, 89, 113);
+}
+
+@media screen and (max-width:350px){
+    body{
+       display:flex ;
+       flex-direction:column;
+       margin: 0;
+    }
+    
+    section{
+        width: 100%;
+    }
+
+    .learn h1{
+            text-align: center;
+           font-size: 20px;
+           line-height: 25px;
+           margin-bottom: 10px;
+    }
+    .learn p{
+        text-align: center;
+    }
+
+    .head,form{
+       width: 80%;
+    margin: 0 auto;
+    }
+    .head{
+        margin-bottom: 20px;
+    }
+
+}

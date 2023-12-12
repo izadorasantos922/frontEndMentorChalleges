@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 680px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(1, 400px 200px);
+    align-items: center;
+    gap: 2rem;
+    background: url(/images/pattern-bg.svg) no-repeat;
+    background-size: 380px;
+    background-position: 300px 70px;
+}
+ .person{
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.199);
+    z-index: 1;
+    top: -120px;
+    left: -80px;
+    position: absolute;
+    height: 280px;
+}
+
+.paragraph{
+    background: url(/images/pattern-quotes.svg) no-repeat;
+    z-index: 2;
+    padding-top: 2.5rem;
+background-size: 80px;
+background-position: 40px 0vh;
+    position: relative;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.job{
+    color: hsl(240, 18%, 77%);
+    margin-left: 4px;
+}
+.data{
+    margin-top: 18px;
+    font-size: 13.5px;
+}
+
+.image-container{
+    position: relative;
+}
+
+.buttons{
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    bottom: -180px;
+    left: -70px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.buttons img:first-of-type{
+    margin-right: 20px;
+}
+
+@media(max-width: 425px){
+    .image-container{
+        margin-left: 2rem;
+    }
+    .container{
+        padding-top: 35px;
+       height: 550px;
+        max-width: 90%;
+        margin:  0 auto ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        background-size: 330px;
+        background-position: -10px 0px;
+    }
+
+    .person{
+        position: static;
+        height: 250px;
+    }
+    .buttons{
+        bottom: -10px;
+        left: 90px;
+    }
+    .paragraph{
+        background-position: 120px 0vh;
+    }
+    .image-container{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
