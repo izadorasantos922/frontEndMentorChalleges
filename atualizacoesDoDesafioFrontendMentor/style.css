@@ -1,0 +1,42 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@400;500;700&family=Roboto:ital,wght@0,100;1,400&display=swap');
+
+*{
+    margin: 0;
+ box-sizing: border-box;
+}
+body{
+    font-family: "Outfit";
+    font-size: 15px;
+    border: 1rem;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(206, 53%, 87%);
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.conteiner{
+    margin: 10px 0;;
+}
+.card img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.card h1{
+    color:hsl(218, 35%, 14%);
+    text-align: center;
+    margin: 10px 0;
+    font-size: 22px;
+}
+.card p{
+    color:hsl(220, 16%, 26%);
+font-weight: bold;
+}
